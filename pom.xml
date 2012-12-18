@@ -17,5 +17,6 @@
   </dependencies>
   <modules>
   	<module>dummy-tester-module1</module>
+  	<module>dummy-tester2</module>
   </modules>
 </project>
