@@ -6,7 +6,6 @@
 	<packaging>pom</packaging>
 	<version>1.0</version>
 	<name>dummy-tester</name>
-	<url>http://maven.apache.org</url>
 	<properties>
 		<jgit.provider.version>1.9-SNAPSHOT</jgit.provider.version>
 	</properties>
