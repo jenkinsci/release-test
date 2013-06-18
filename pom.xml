@@ -7,7 +7,7 @@
 	<version>1.0</version>
 	<name>dummy-tester</name>
 	<properties>
-		<jgit.provider.version>1.9-SNAPSHOT</jgit.provider.version>
+		<jgit.provider.version>1.8.1</jgit.provider.version>
 	</properties>
 	<dependencies>
 		<dependency>
