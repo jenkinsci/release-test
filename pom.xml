@@ -3,7 +3,7 @@
 	<groupId>dummy</groupId>
 	<artifactId>dummy-tester</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0.5</version>
+	<version>1.0.6-SNAPSHOT</version>
 	<name>dummy-tester</name>
 	<properties>
 		<jgit.provider.version>1.8.1</jgit.provider.version>
