@@ -39,7 +39,7 @@
 					<providerImplementations>
 						<git>jgit</git>
 					</providerImplementations>
-					<goal>install</goal>
+					<goals>install</goals>
 				</configuration>
 				<dependencies>
 					<dependency>
