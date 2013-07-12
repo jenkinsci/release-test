@@ -2,3 +2,4 @@ dummy-tester
 ============
 
 just a simple mvn project used to test some flows in the build
+a change
