@@ -8,7 +8,7 @@
 
     <groupId>test</groupId>
     <artifactId>test</artifactId>
-	<version>1.1.16-SNAPSHOT</version>
+	<version>1.1.16</version>
 	<name>dummy-tester</name>
     <scm>
       <connection>scm:git:git://github.com/jenkinsci/release-test.git</connection>
