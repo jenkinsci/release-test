@@ -11,7 +11,7 @@
 	<version>1.1.15-SNAPSHOT</version>
 	<name>dummy-tester</name>
 	<scm>
-		<developerConnection>scm:jgit:https://github.com/jenkinsci/release-test.git</developerConnection>
+		<developerConnection>scm:git:https://github.com/jenkinsci/release-test.git</developerConnection>
 	</scm>
 
     <repositories>
