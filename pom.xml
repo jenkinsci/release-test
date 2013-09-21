@@ -8,11 +8,12 @@
 
     <groupId>test</groupId>
     <artifactId>test</artifactId>
-	<version>1.1.15</version>
+	<version>1.1.15-SNAPSHOT</version>
 	<name>dummy-tester</name>
-	<scm>
-		<developerConnection>scm:git:https://github.com/jenkinsci/release-test.git</developerConnection>
-	</scm>
+    <scm>
+      <connection>scm:git:git://github.com/jenkinsci/release-test.git</connection>
+      <developerConnection>scm:git:ssh://git@github.com/jenkinsci/release-test.git</developerConnection>
+    </scm>
 
     <repositories>
       <repository>
