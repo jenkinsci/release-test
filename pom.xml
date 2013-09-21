@@ -1,72 +1,30 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>dummy</groupId>
-	<artifactId>dummy-tester</artifactId>
-	<packaging>pom</packaging>
+    <parent>
+      <groupId>org.jenkins-ci</groupId>
+      <artifactId>jenkins</artifactId>
+      <version>1.32</version>
+    </parent>
+
+    <groupId>test</groupId>
+    <artifactId>test</artifactId>
 	<version>1.1.15-SNAPSHOT</version>
 	<name>dummy-tester</name>
-	<properties>
-		<jgit.provider.version>1.9-M1</jgit.provider.version>
-	</properties>
-	<dependencies>
-		<dependency>
-			<groupId>junit</groupId>
-			<artifactId>junit</artifactId>
-			<version>3.8.1</version>
-			<scope>test</scope>
-		</dependency>
-	</dependencies>
-	<modules>
-		<module>dummy-tester-module1</module>
-		<module>dummy-tester2</module>
-	</modules>
 	<scm>
-		<developerConnection>scm:jgit:https://github.com/imod/dummy-tester.git</developerConnection>
+		<developerConnection>scm:jgit:https://github.com/jenkinsci/release-test.git</developerConnection>
 	</scm>
-	<distributionManagement>
-		<repository>
-			<id>dummy-repo</id>
-			<url>http://central_nexus/server</url>
-		</repository>
-	</distributionManagement>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.3</version>
-				<configuration>
-					<providerImplementations>
-						<git>jgit</git>
-					</providerImplementations>
-					<goals>install</goals>
-				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>org.apache.maven.scm</groupId>
-						<artifactId>maven-scm-provider-jgit</artifactId>
-						<version>${jgit.provider.version}</version>
-					</dependency>
-				</dependencies>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-scm-plugin</artifactId>
-				<version>1.8.1</version>
-				<configuration>
-					<providerImplementations>
-						<git>jgit</git>
-					</providerImplementations>
-				</configuration>
-				<dependencies>
-					<dependency>
-						<groupId>org.apache.maven.scm</groupId>
-						<artifactId>maven-scm-provider-jgit</artifactId>
-						<version>${jgit.provider.version}</version>
-					</dependency>
-				</dependencies>
-			</plugin>
 
-		</plugins>
-	</build>
+    <repositories>
+      <repository>
+        <id>repo.jenkins-ci.org</id>
+        <url>http://repo.jenkins-ci.org/public/</url>
+        <releases>
+          <enabled>true</enabled>
+        </releases>
+        <snapshots>
+          <enabled>false</enabled>
+        </snapshots>
+      </repository>
+    </repositories>
+
 </project>
